@@ -7,52 +7,53 @@
   body {
     margin: 0;
     height: 100vh;
-    background: radial-gradient(circle at center, #1a1a1a, #000);
-    font-family: 'Segoe UI', sans-serif;
-    color: #fff;
+    background: linear-gradient(135deg, #4b79a1, #283e51);
+    background-size: 400% 400%;
+    animation: gradientShift 12s ease infinite;
+    font-family: Arial, sans-serif;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    overflow: hidden;
+  }
+
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
   }
 
   h1 {
-    font-size: 60px;
-    margin-bottom: 10px;
-    text-shadow: 0 0 20px #00eaff;
+    font-size: 55px;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    background: rgba(255,255,255,0.1);
+    padding: 30px;
+    width: 420px;
+    margin: 0 auto;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 25px rgba(0,0,0,0.3);
   }
 
   p {
-    font-size: 22px;
-    color: #ccc;
-  }
-
-  .glow {
-    animation: pulse 2s infinite;
-  }
-
-  @keyframes pulse {
-    0% { text-shadow: 0 0 10px #00eaff; }
-    50% { text-shadow: 0 0 25px #00eaff; }
-    100% { text-shadow: 0 0 10px #00eaff; }
-  }
-
-  .footer {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    font-size: 14px;
-    color: #444;
+    font-size: 20px;
+    line-height: 1.5;
   }
 </style>
 </head>
 <body>
 
-<h1 class="glow">AlexPruett.com</h1>
-<p>A domain with no purpose… but plenty of style.</p>
+<h1>AlexPruett.com</h1>
 
-<div class="footer">© 2026 Alex Pruett</div>
+<div class="card">
+  <p>This domain doesn’t have a mission.</p>
+  <p>It doesn’t have a plan.</p>
+  <p>It just… exists.</p>
+</div>
 
 </body>
 </html>

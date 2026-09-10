@@ -6,54 +6,129 @@
 <style>
   body {
     margin: 0;
-    height: 100vh;
-    background: linear-gradient(135deg, #4b79a1, #283e51);
-    background-size: 400% 400%;
-    animation: gradientShift 12s ease infinite;
     font-family: Arial, sans-serif;
-    color: white;
+    background: #1e2a38;
+    color: #fff;
+  }
+
+  /* Header */
+  header {
+    background: #111c27;
+    padding: 20px 40px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+
+  nav a {
+    color: #9fc5ff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  nav a:hover {
+    color: #cfe3ff;
+  }
+
+  /* Hero Section */
+  .hero {
     text-align: center;
+    padding: 120px 20px 80px;
+    background: linear-gradient(135deg, #2f3f52, #1e2a38);
   }
 
-  @keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-
-  h1 {
-    font-size: 55px;
+  .hero h2 {
+    font-size: 48px;
     margin-bottom: 20px;
   }
 
-  .card {
-    background: rgba(255,255,255,0.1);
-    padding: 30px;
-    width: 420px;
+  .hero p {
+    font-size: 22px;
+    color: #cdd9e5;
+    max-width: 700px;
     margin: 0 auto;
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
+    line-height: 1.6;
+  }
+
+  /* Content Section */
+  .content {
+    max-width: 900px;
+    margin: 60px auto;
+    background: #2a3b4d;
+    padding: 40px;
+    border-radius: 12px;
     box-shadow: 0 0 25px rgba(0,0,0,0.3);
   }
 
-  p {
-    font-size: 20px;
-    line-height: 1.5;
+  .content h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .content p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #d8e6f3;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
+    background: #111c27;
+    color: #7f9bb8;
+    font-size: 14px;
   }
 </style>
 </head>
 <body>
 
-<h1>AlexPruett.com</h1>
+<header>
+  <h1>AlexPruett.com</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Nothing</a>
+  </nav>
+</header>
 
-<div class="card">
-  <p>This domain doesn’t have a mission.</p>
-  <p>It doesn’t have a plan.</p>
-  <p>It just… exists.</p>
-</div>
+<section class="hero">
+  <h2>Welcome to the Domain of No Purpose</h2>
+  <p>
+    You found your way here, somehow.  
+    This place doesn’t have a mission.  
+    It doesn’t have a plan.  
+    It just… exists.
+  </p>
+</section>
+
+<section class="content">
+  <h3>What Is This Site?</h3>
+  <p>
+    Honestly? Not much.  
+    It’s a digital plot of land on the internet — owned, maintained, and occasionally decorated by Alex Pruett.  
+    Maybe someday it’ll evolve into something meaningful.  
+    Or maybe it’ll remain a beautifully pointless corner of the web.
+  </p>
+
+  <p>
+    Either way, you’re here now.  
+    So feel free to look around, even though there’s nothing to look at.
+  </p>
+</section>
+
+<footer>
+  © 2026 Alex Pruett — A proudly purposeless website.
+</footer>
 
 </body>
 </html>
